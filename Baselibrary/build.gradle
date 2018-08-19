@@ -31,8 +31,14 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support:appcompat-v7:26+'
+
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    //Android Support
+    api "com.android.support:support-v4:${android_support_version}"
+    api "com.android.support:appcompat-v7:${android_support_version}"
+    api "com.android.support:recyclerview-v7:${android_support_version}"
+    api "com.android.support:design:${android_support_version}"
+    api "com.android.support:cardview-v7:${android_support_version}"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
@@ -67,6 +73,8 @@ dependencies {
     // 支持Kotlin语法的RxLifecycle基础库
     api "com.trello:rxlifecycle-kotlin:1.0"
     api "com.trello:rxlifecycle-components:1.0"
+    //Glide
+    api "com.github.bumptech.glide:glide:${glide_version}"
 
 
 
